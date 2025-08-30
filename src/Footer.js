@@ -51,7 +51,7 @@ export default function Footer() {
         <div className="d-flex justify-content-between align-items-center flex-column flex-md-row mt-4 border-top pt-4">
           <div className="text-muted small mb-2 mb-md-0">
             Copyright © Deliver X | Designed by{" "}
-            <a href="#" className="text-danger fw-bold">BRIX Templates</a> - Powered by Webflow
+            <a href="" className="text-danger fw-bold">BRIX Templates</a> - Powered by Webflow
           </div>
 
           <div className="d-flex gap-2">

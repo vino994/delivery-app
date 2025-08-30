@@ -1,23 +1,18 @@
-/* Smooth toggle animation for mobile navbar */
-#navbarNav {
+/* Ensure proper collapse behavior for navbar */
+.navbar-collapse {
   overflow: hidden;
-  max-height: 0; /* Initially collapsed */
-  opacity: 0; /* Initially hidden */
+  max-height: 0;
+  opacity: 0;
   transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-.navbar-collapse.collapse.show {
-  max-height: 500px; /* Adjust based on the number of items */
-  opacity: 1; /* Fully visible */
+.navbar-collapse.show {
+  max-height: 500px; /* Large enough to fit the menu items */
+  opacity: 1;
 }
 
 @media (max-width: 991px) {
-  /* Adjust max-height for mobile screens */
-  .navbar-collapse {
-    max-height: 0;
-  }
-
-  .navbar-collapse.collapse.show {
-    max-height: 500px;
+  .navbar-toggler {
+    border-color: #ccc;  /* Optional: Styling the toggler */
   }
 }
