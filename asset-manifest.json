@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/delivery-app/static/css/main.d189f825.css",
+    "main.js": "/delivery-app/static/js/main.a1e63566.js",
+    "static/js/453.0521b15a.chunk.js": "/delivery-app/static/js/453.0521b15a.chunk.js",
+    "static/media/burger.PNG": "/delivery-app/static/media/burger.a225c15d1c9cd43d6877.PNG",
+    "static/media/person.PNG": "/delivery-app/static/media/person.ec5514fc43ceed7909c8.PNG",
+    "static/media/phone.PNG": "/delivery-app/static/media/phone.3db8fd41b4bd8abe2d90.PNG",
+    "static/media/delivery.png": "/delivery-app/static/media/delivery.5eb0fc03f0d4f9a3173c.png",
+    "static/media/fa-solid-900.woff2": "/delivery-app/static/media/fa-solid-900.f54756da1f3d1b88887f.woff2",
+    "static/media/fa-brands-400.woff2": "/delivery-app/static/media/fa-brands-400.1f6bad931d92a0a52c45.woff2",
+    "static/media/fa-regular-400.woff2": "/delivery-app/static/media/fa-regular-400.5632c43107f4d3fa4806.woff2",
+    "static/media/restaurent.PNG": "/delivery-app/static/media/restaurent.136bcf3d781a36b11265.PNG",
+    "static/media/riders.PNG": "/delivery-app/static/media/riders.843c0118852fc11fda52.PNG",
+    "static/media/custmer.PNG": "/delivery-app/static/media/custmer.e38f441ec1be2eebb3f1.PNG",
+    "static/media/fa-v4compatibility.woff2": "/delivery-app/static/media/fa-v4compatibility.24fc9d217708cb3f0362.woff2",
+    "index.html": "/delivery-app/index.html",
+    "main.d189f825.css.map": "/delivery-app/static/css/main.d189f825.css.map",
+    "main.a1e63566.js.map": "/delivery-app/static/js/main.a1e63566.js.map",
+    "453.0521b15a.chunk.js.map": "/delivery-app/static/js/453.0521b15a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d189f825.css",
+    "static/js/main.a1e63566.js"
+  ]
+}
