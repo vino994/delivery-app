@@ -1,0 +1,12 @@
+/* Smooth toggle animation for mobile navbar */
+#navbarNav {
+  overflow: hidden;
+  max-height: 0; /* Initially collapsed */
+  opacity: 0; /* Initially hidden */
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.navbar-collapse.collapse.show {
+  max-height: 500px; /* Adjust based on the number of items */
+  opacity: 1; /* Fully visible */
+}
