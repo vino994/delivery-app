@@ -1,0 +1,12 @@
+.journey-section .journey-timeline {
+  max-height: 400px; /* Adjust as needed */
+}
+
+.journey-timeline::-webkit-scrollbar {
+  width: 6px;
+}
+
+.journey-timeline::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}

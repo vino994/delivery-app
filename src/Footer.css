@@ -1,0 +1,21 @@
+.footer-section {
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
+
+.footer-section ul li {
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.footer-section ul li:hover {
+  color: #000;
+}
+
+.footer-section a {
+  text-decoration: none;
+}
+
+.footer-section button {
+  font-weight: 500;
+}

@@ -1,0 +1,34 @@
+.about-section .bg-circle {
+  width: 320px;
+  height: 320px;
+  background-color: #FF5722;
+  z-index: 0;
+}
+
+.bg-orange {
+  background-color: #FF5722;
+}
+
+.rider-img {
+  max-width: 280px;
+  z-index: 1;
+  position: relative;
+}
+
+.card-burger,
+.card-delivery {
+  position: absolute;
+  z-index: 2;
+}
+
+.card-burger {
+  width: 180px;
+  top: 60%;
+  left: 10%;
+}
+
+.card-delivery {
+  width: 140px;
+  bottom: 10%;
+  right: 10%;
+}
