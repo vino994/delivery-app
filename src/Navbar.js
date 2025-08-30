@@ -10,7 +10,7 @@ export default function Navbar() {
           <strong>Deliver X</strong>
         </Link>
 
-        {/* Navbar toggler button for mobile view */}
+        {/* Navbar Toggler Button */}
         <button
           className="navbar-toggler"
           type="button"
@@ -23,7 +23,7 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Navbar menu items */}
+        {/* Navbar Menu */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
@@ -49,7 +49,7 @@ export default function Navbar() {
             </li>
           </ul>
 
-          {/* Button group for desktop view */}
+          {/* Button Group for Desktop View */}
           <div className="ms-3 d-flex">
             <button className="btn btn-outline-dark me-2">Download app</button>
             <Link to="/register" className="btn btn-danger">Register</Link>
