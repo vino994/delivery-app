@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { CartContext } from './CartContext';
+import  { useContext } from 'react';
 export default function Navbar() {
+   const { cartCount } = useContext(CartContext); 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
       <div className="container">
@@ -10,7 +12,7 @@ export default function Navbar() {
           <strong>Deliver X</strong>
         </Link>
 
-        {/* Navbar Toggler Button */}
+        {/* Navbar toggler button for mobile view */}
         <button
           className="navbar-toggler"
           type="button"
@@ -23,7 +25,7 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Navbar Menu */}
+        {/* Navbar menu items */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
@@ -38,18 +40,21 @@ export default function Navbar() {
             <li className="nav-item">
               <Link className="nav-link" to="/pages">Pages</Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/cart">Cart(0)</Link>
-            </li>
+            <Link className="nav-link" to="/cart">
+                Cart({cartCount})
+              </Link>
             <li className="nav-item">
               <Link className="nav-link" to="/contact">Contact</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/register">Register</Link>
             </li>
+              <li className="nav-item">
+            
+            </li>
           </ul>
 
-          {/* Button Group for Desktop View */}
+          {/* Button group for desktop view */}
           <div className="ms-3 d-flex">
             <button className="btn btn-outline-dark me-2">Download app</button>
             <Link to="/register" className="btn btn-danger">Register</Link>
