@@ -19,3 +19,6 @@
 .footer-section button {
   font-weight: 500;
 }
+.btn-primary{
+      padding: 5px 5px !important;
+}

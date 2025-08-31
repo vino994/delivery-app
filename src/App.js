@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Use HashRouter for GitHub Pages
-import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
+// Bootstrap CSS
  // Bootstrap JS (with Popper.js)
 
 import Navbar from './Navbar';
