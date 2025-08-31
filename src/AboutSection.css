@@ -9,7 +9,11 @@
 .about-graphics-wrapper {
   position: relative;
   max-width: 400px;
+  width: 100%;
+  padding-top: 60px;   /* Room for card-delivery at top */
+  padding-bottom: 60px; /* Room for card-burger at bottom */
 }
+
 
 .rider-img {
   width: 100%;
@@ -47,25 +51,26 @@
     transform: translateY(0px);
   }
 }
-
 .card-burger {
   position: absolute;
-  bottom: -20px;
-  left: -20px;
+  bottom: 0;
+  left: 0;
   width: 180px;
   background: #fff;
   z-index: 2;
   animation: slideInLeft 1s ease-out;
+  transform: translate(-20%, 20%);
 }
-
 .card-delivery {
   position: absolute;
-  top: -20px;
-  right: -20px;
+  top: 0;
+  right: 0;
   background: #ffffff;
   z-index: 2;
   animation: slideInRight 1s ease-out;
+  transform: translate(20%, -20%);
 }
+
 
 /* Animations */
 @keyframes slideInLeft {
@@ -123,5 +128,22 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@media (max-width: 576px) {
+  .card-delivery {
+    top: 10px;
+    right: 10px;
+    transform: none;
+    width: 140px;
+    font-size: 0.85rem;
+  }
+
+  .card-burger {
+    bottom: 10px;
+    left: 10px;
+    transform: none;
+    width: 140px;
+    font-size: 0.85rem;
   }
 }
