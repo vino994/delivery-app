@@ -3,8 +3,27 @@ import React from "react";
 import "./AboutSection.css"; // make sure this is updated
 import riderImg from "./assets/delivery.png";
 import burgerImg from "./assets/burger.PNG";
-
+import  { useEffect, useRef } from "react";
 export default function AboutSection() {
+    const leftRef = useRef();
+  const rightRef = useRef();
+    useEffect(() => {
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    if (leftRef.current) observer.observe(leftRef.current);
+    if (rightRef.current) observer.observe(rightRef.current);
+
+    return () => observer.disconnect();
+  }, []);
   return (
     <section className="about-section py-5 position-relative">
       <div className="container">
