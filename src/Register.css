@@ -1,0 +1,127 @@
+/* Register.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+
+.register-container {
+  width: 100%;
+  max-width: 450px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+.register-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 30px 50px;
+  box-shadow: 0 12px 30px rgba(118, 75, 162, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+
+.register-card:hover {
+  box-shadow: 0 20px 40px rgba(118, 75, 162, 0.6);
+}
+
+.register-title {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #764ba2;
+  margin-bottom: 30px;
+  text-align: center;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+  user-select: none;
+}
+
+.input-field {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input-field::placeholder {
+  color: #bbb;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #ee0979;
+  box-shadow: 0 0 8px rgba(238, 9, 121, 0.6);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #ee0979, #ff6a00);
+  border: none;
+  border-radius: 12px;
+  padding: 15px 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.4s ease;
+  user-select: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+}
+
+.w-100 {
+  width: 100%;
+}
+/* Full page wrapper that centers content */
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;      /* Full viewport height */
+  background: linear-gradient(to right, #fceabb, #f8b500); /* You can keep your background here */
+  padding: 20px;      /* Small padding so it doesn’t touch edges on small screens */
+  box-sizing: border-box;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.7s ease forwards;
+  opacity: 0;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .register-card {
+    padding: 30px 20px 40px;
+    border-radius: 12px;
+  }
+
+  .register-title {
+    font-size: 2rem;
+  }
+}

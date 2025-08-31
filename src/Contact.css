@@ -1,0 +1,15 @@
+/* src/Contact.css */
+.contact-bg {
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  min-height: 100vh;
+}
+
+.card {
+  background-color: #ffffffd9;
+  border-radius: 12px;
+}
+
+input:focus, textarea:focus {
+  border-color: #dc3545 !important; /* red border on focus */
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}

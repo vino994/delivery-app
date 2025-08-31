@@ -1,0 +1,114 @@
+/* Modal.css */
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(15, 15, 15, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInBackdrop 0.3s ease forwards;
+  z-index: 1050;
+}
+
+@keyframes fadeInBackdrop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 450px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: slideInModal 0.35s ease forwards;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes slideInModal {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.modal-header h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+  color: #f44336;
+}
+
+.modal-body {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 90px;
+}
+
+.btn-cancel {
+  background: #e0e0e0;
+  color: #555;
+}
+
+.btn-cancel:hover {
+  background: #c6c6c6;
+}
+
+.btn-confirm {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 75, 43, 0.5);
+}
+
+.btn-confirm:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+}

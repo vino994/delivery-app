@@ -1,0 +1,12 @@
+/* Pages.css */
+.pages-section {
+  background: linear-gradient(to right, #fefefe, #f0f3f7);
+}
+
+.card {
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}

@@ -14,7 +14,7 @@ import Cart from './Cart';
 import Contact from './Contact';
 import Register from './Register';
 import NotFound from './NotFound';
-
+import Login from './Login'; 
 function App() {
   return (
     <Router>
@@ -28,6 +28,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} /> 
         <Route path="*" element={<NotFound />} />
       </Routes>
 
